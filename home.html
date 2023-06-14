@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    p {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    li {
+      display: inside;
+      margin-right: 10px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #000000;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    a:hover {
+      background-color: #888888;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 9999;
+    }
+    
+    .logo img {
+      width: 120px;
+      height: 50px;
+    }
+</style>
+</head>
+<body>
+  <a class="logo" href="index.html">
+    <img src="Siemens Logo.png" alt="Logo">
+  </a>
+
+  <!-- Rest of your website content -->
+
+</body>
+</style>
+  <head>
+    <title>Mobility Components Installation Guide</title>
+    <h1>Welcome to Siemens Mobility Industries</h1>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        max-width: 3000px;
+        margin: 20px;
+        padding: 20px;
+      }
+      
+      h1 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        text-align: center;
+      }
+      
+      #search-bar {
+        width: 50%;
+        padding: 15px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .pdf-list {
+    
+        list-style-type: square;
+        padding: 0;
+      }
+      
+      .pdf-list-item {
+        display: table-header-group;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 2px solid #ccc;
+      }
+      
+      .pdf-list-item .pdf-icon {
+        align-items: left;
+        display: table-header-group;
+        width: 500px;
+        height: 300px; 
+        padding: 30px;
+        
+      }
+      
+      .pdf-list-item a {
+        text-decoration: none;
+        color: #000;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mobility Components Installation Guide</h1>
+      <input type="text" id="search-bar" placeholder="Search Components">
+      <ul class="pdf-list" id="pdf-list">
+        <li class="pdf-list-item">
+          <img src="DC Track Cicuit.png" alt="DC Track Circuit" class="pdf-icon">
+          <a href="https://drive.google.com/file/d/1ABDTK433c6Vdq3t4wBbWt9EbcVnaGCeF/view?usp=drive_link" target="_blank">DC Track Circuit</a>
+        </li>
+        <li class="pdf-list-item">
+          <img src="Earth Leakage Detector.png" alt="PDF Icon" class="pdf-icon">
+          <a href="https://drive.google.com/file/d/1y4DrirEn2sAU8dYEuPqjL0wBe6zWwwd_/view?usp=drive_link" target="_blank">Earth Leakage Detector</a>
+        </li>
+        <li class="pdf-list-item">
+          <img src="Earthing of S&T Gears.png" alt="PDF Icon" class="pdf-icon">
+          <a href="https://drive.google.com/file/d/1MNV7dtc9-9BSlX6dXJ6YoQPkWDTLs3S1/view?usp=drive_link" target="_blank">Earthing of S&T Gears</a>
+        </li>
+        <li class="pdf-list-item">
+          <img src="Location Box V1.png" alt="PDF Icon" class="pdf-icon">
+          <a href="https://drive.google.com/file/d/1muuTjehvaQwc8PttpgkGWCbhwG3b9efr/view?usp=drive_link" target="_blank">Location Box V1</a>
+        </li>
+        <li class="pdf-list-item">
+          <img src="Signals V1.png" alt="PDF Icon" class="pdf-icon">
+          <a href="https://drive.google.com/file/d/1ATAkDlDswGqHZ8QV5aZszfAQcG6p_zqv/view?usp=drive_link" target="_blank">Signals V1</a>
+        </li>
+        <li class="pdf-list-item">
+          <img src="pdf-icon.png" alt="Component Image" class="pdf-icon">
+          <a href="pdfs/pdf2.pdf" target="_blank">Add +</a>
+        </li>
+
+        <!-- Add more PDF list items as needed -->
+      </ul>
+    </div>
+  
+    <script>
+      // Function to filter PDFs based on search input
+      function filterPDFs() {
+        var searchInput = document.getElementById("search-bar").value.toLowerCase();
+        var pdfListItems = document.querySelectorAll(".pdf-list-item");
+        
+        pdfListItems.forEach(function(item) {
+          var pdfName = item.textContent.toLowerCase();
+          if (pdfName.includes(searchInput)) {
+            item.style.display = "flex";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      }
+  
+      // Attach event listener to search input
+      document.getElementById("search-bar").addEventListener("input", filterPDFs);
+    </script>
+  </body>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the home page of our website.</p>
+    <ul>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </div>
+</body>
+</html>
